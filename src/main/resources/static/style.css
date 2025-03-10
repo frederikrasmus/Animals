@@ -1,5 +1,4 @@
 body {
-    background-image: url("Savannah.jpg");
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -9,14 +8,19 @@ body {
     flex-direction: column;
 }
 
+body.lion {background-image: url("Savannah.jpg")}
+body.polar-bear {background-image: url("Antarctica.jpg")}
+body.blue-whale {background-image: url("Ocean.jpg")}
+body.orangutan {background-image: url("Jungle.jpg")}
+body.dove {background-image: url("dove.jpg")}
+
 .blurred {
     position: absolute;
-    background-image: url("Savannah.jpg");
     background-size: cover;
     background-position: center;
     filter: blur(5px);
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     z-index: -1;
 }
 
@@ -50,12 +54,15 @@ body {
 }
 
 .button.lion {background-color: coral}
+.button.polar-bear {background-color: white}
+.button.blue-whale {background-color: blue}
+.button.orangutan {background-color: darkgreen}
+.button.dove {background-color: deepskyblue}
 
 .img-wrapper {
     position: relative;
     overflow: hidden;
     margin-top: 120px;
-
 }
 
 .img-wrapper > img {
